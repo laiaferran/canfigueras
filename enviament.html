@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./sass/custom.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="border-bottom: 1px solid rgb(193, 186, 186)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./fotos/logo.png" alt="Logo" width="50" height="46" class="d-inline-block align-text-top">
+      </a> <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="cistella.html">La meva cistella</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="enviament.html"
+              style="color: #214F4B; text-decoration:underline;">Enviament</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pagament.html">Pagament</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="confirmacio.html">Confirmació</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <!-- Gestió de compte -->
+    <div class="row">
+      <div class="col-sm-12 mb-3  mb-sm-0 d-flex flex-column gap-4">
+        <div class="card shadow-sm rounded" style="background-color: #DFD5B8;">
+          <div class="card-body">
+            <div class="d-flex justify-content-evenly align-items-center">
+              <span>LOGO USUARI</span>
+              <span><b class="fs-4">Tens un compte Can Figueras?</b></span>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="min-width: 20%;">
+                Comprar des del compte
+              </button>
+              <button class="btn btn-primary" style="min-width: 20%;">
+                <a href="crear_compte.html" style="color:white; text-decoration: none;">Crear compte</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #DFD5B8;">
+          <div class="modal-header" style="border: none;">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p style="color: #214F4B;">Iniciar sessió</p>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Correu electrònic</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="name@example.com"
+                rows="1"></textarea>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Contrassenya</label>
+              <input class="form-control" id="exampleFormControlTextarea1" rows="1" type="password">
+            </div>
+          </div>
+
+          <div class="modal-footer d-flex flex-column justify-content-center" style="border: none;">
+            <button type="button" class="btn btn-primary"><a href="pagament.html" style="color: white; text-decoration: none;">Iniciar sessió</a></button>
+            <a href="" style="color: #214F4B;">He oblidat la contrassenya</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-5">
+      <div class="col-sm-8 mb-3 mb-sm-0 d-flex flex-column gap-4">
+        <div class="card shadow-sm rounded" style="background-color: #DFD5B8;">
+          <div class="card-body">
+            <p style="color: #214F4B;"><b>Les teves dades</b></p>
+
+            <!-- Formulari -->
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-5 mb-3 mb-sm-0 d-flex flex-column gap-">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Nom</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-7 mb-3 mb-sm-0 d-flex flex-column gap-4">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Cognoms</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Adreça</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-5 mb-3 mb-sm-0 d-flex flex-column gap-">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Codi postal</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-7 mb-3 mb-sm-0 d-flex flex-column gap-4">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Població</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-sm-5 mb-3 mb-sm-0 d-flex flex-column gap-">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Província</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-5 mb-3 mb-sm-0 d-flex flex-column gap-">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Telèfon</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+                <div class="col-sm-7 mb-3 mb-sm-0 d-flex flex-column gap-4">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Correu electrònic</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+                <label class="form-check-label" for="checkDefault">
+                  Accepto la <a href="" style="color:#214F4B">política de privadesa</a>
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="checkChecked" checked>
+                <label class="form-check-label" for="checkChecked">
+                  Accepto les <a href="" style="color:#214F4B; mb-5">condicions generals de compra</a>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card hadow-sm rounded" style="background-color: #DFD5B8">
+          <div class="card-body mt-3 mb-3">
+            <h5 class="card-title">Resum de la comanda</h5>
+            <div class="container">
+              <div class="d-flex justify-content-between">
+                <span>
+                  <p>IVA inclòs</p>
+                </span>
+                <span>
+                  <p>21%</p>
+                </span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>
+                  <p>Subtotal</p>
+                </span>
+                <span>
+                  <p>72,00€</p>
+                </span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>
+                  <p>Despeses d'enviament</p>
+                </span>
+                <span>
+                  <p>0,00€</p>
+                </span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span>
+                  <h4>Total</h4>
+                </span>
+                <span>
+                  <p><b>72,00€</b></p>
+                </span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary"><a href="pagament.html" style="color: white; text-decoration: none;">Continuar</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

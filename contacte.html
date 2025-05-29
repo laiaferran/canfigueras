@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./sass/custom.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!--Navbar-->  
+  <nav class="navbar navbar-expand-lg" style="border-bottom: 1px solid rgb(193, 186, 186)">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./fotos/logo.png" alt="Logo" width="60" height="56" class="d-inline-block align-text-top">
+        </a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inici</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quisom.html">Qui som?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="productes.html">Productes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="elaboracio.html">Elaboració</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacte.html" style="color: #214F4B; text-decoration:underline;">Contacte</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CAT
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">ES</a></li>
+              <li><a class="dropdown-item" href="#">ENG</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand" href="cistella.html" aria-label="cistella">
+          <img src="/fotos/icono/carro.png" alt="icona per anar a la botiga" class="" style="width: 40px;">
+        </a>
+        <a class="navbar-brand" href="compte.html" aria-label="compte">
+          <img src="/fotos/icono/usuari.png" alt="icona per anar a usuari" aria-label="usuari" class="" style="width:40px">
+        </a>
+      </div>
+    </div>
+  </nav>
+
+<!--Foto amb text-->
+
+<div style="height: 500px;" class="container-fluid position-relative d-flex flex-column align-items-center justify-content-center">
+  <h1 class="z-1" style="color: white;">Contacte</h1>
+  <h2 class="z-1" style="color: rgb(255, 255, 255)">Si necessites contactar amb nosaltres, escriu-nos!</h2>
+    <img src="/fotos/qui som.jpg" alt="La Tossa de Montbui" class="img-fluid w-100 h-100 object-fit-cover position-absolute">
+
+  </div>
+  <div class="container mt-5">
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Nom</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+      </div>      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Cognoms</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correu electrònic</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Missatge</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="container d-flex justify-content-center mb-5">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Enviar
+        </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h4>El seu missatge s’ha enviat correctament.</h4>
+                  <p>Contactarem amb vosté el més aviat possible</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"><a href="./index.html" aria-label="Índex">Tornar a la pàgina d'inici</a></button>
+                </div>
+              </div>
+            </div>
+          </div>    
+        </div>
+        <div class="container d-flex justify-content-center">
+            <p>Al enviar el missatge acceptes la nostra <a href="#" class="text-reset" aria-label="política privacitat">política de privacitat</a> i els <a href="#" class="text-reset" aria-label="termes de servei">termes de servei</a>.</p>
+
+        </div>
+    </div>
+   
+    <footer>
+      <div class="container-fluid">
+        <div class="row p-5">
+          <div class="col">
+            <p>Xarxes socials</p>
+            <img style="height:60px; margin:auto" src="/fotos/icono/xxss.png" alt="xarxes socials">
+          </div>
+          <div class="col">
+            <p style="font-size: medium;">Els nostres caves</p>
+            <p><a href="#" aria-label="Caves dolços">Dolç</a></p>
+            <p><a href="#" aria-label="Caves bruts">Brut</a></p>
+            <p><a href="#" aria-label="Caves reserva">Reserva</a></p>
+            <p><a href="#" aria-label="Caves secs">Sec</a></p>
+          </div>
+          <div class="col">
+            <p style="font-size: medium;">Legal</p>
+            <p><a href="#" aria-label="Política privadesa">Política de privadesa</a></p>
+            <p><a href="#" aria-label="Direcció termes de servei">Termes de serveis</a></p>
+          </div>
+          <div class="col">
+            <p style="font-size: medium;">FAQS</p>
+            <p><a href="faqs.html" aria-label="Faqs">Quins són els terminis d’enviament?</a></p>
+            <p><a href="faqs.html" aria-label="Faqs">Què passa si una ampolla arriba trencada?</a></p>
+            <p><a href="faqs.html" aria-label="Faqs">Quines formes de pagament accepteu?</a></p>
+  
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+  
+  </body>
+  
+  </html>

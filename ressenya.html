@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="./sass/custom.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg" style="border-bottom: 1px solid rgb(193, 186, 186)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./fotos/logo.png" alt="Logo" width="50" height="46" class="d-inline-block align-text-top">
+      </a> <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+    </div>
+  </nav>
+
+  <div class="container-fluid mt-3">
+    <a href="index.html" aria-label="inici" style="text-decoration: none">
+      &lt; Anar a l'inici
+    </a>
+  </div>
+  
+  <div class="container mt-3 ml-2 mr-2">
+    <p>Fes la teva ressenya: </p>
+    <div class="card shadow-sm rounded" style="background-color: #DFD5B8;">
+      <div class="card-body mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5 mb-3 mb-sm-0 d-flex flex-column">
+              <img src="/fotos_cava/CAVA_BRUT_NEURE.JPG" alt="" style="width: 400px;">
+            </div>
+            <div class="col-sm-7 mb-3 mb-sm-0 d-flex flex-column">
+              <p style="font-weight: bold; font-size: 2rem;">Cava Brut Nature</p>
+              <div class="container d-flex flex-column mt-2">
+                <p>Amb quantes estrelles vols valorar el producte?</p>
+                <div class="container d-flex justify-content-center gap-3">
+                  <img src="/fotos/icono/ressenya0.png" alt="ressenya" style="width: 200px; height: auto;">
+
+                </div>
+              </div>
+              <div class="container d-flex flex-column mt-5">
+                <label for="ressenya">
+                  <p>Escriu la teva ressenya d'aquest producte:</p>
+                  <textarea class="form-control" rows="8" id="ressenya"></textarea>
+                </label>
+              </div>
+              <div class="container d-flex justify-content-center mt-4">
+                  <a href="#" class="btn btn-primary">Publicar ressenya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <p style="color: #191919;">La teva ressenya serà pública i es mostrará el teu nom d'usuari.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

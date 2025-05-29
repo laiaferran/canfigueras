@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./sass/custom.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!--Navbar-->  
+  <nav class="navbar navbar-expand-lg" style="border-bottom: 1px solid rgb(193, 186, 186)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./fotos/logo.png" alt="Logo" width="60" height="56" class="d-inline-block align-text-top">
+      </a>      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Inici</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-label="qui som" href="quisom.html">Qui som?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-label="productes" href="productes.html" style="color: #214F4B; text-decoration:underline;">Productes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-label="elaboració" href="elaboracio.html">Elaboració</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-label="contacte" href="contacte.html">Contacte</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CAT
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" aria-label="castellà" href="#">ES</a></li>
+              <li><a class="dropdown-item" aria-label="anglès" href="#">ENG</a></li>
+            </ul>
+          </li>
+        </ul>
+        <a class="navbar-brand" href="cistella.html" aria-label="cistella">
+          <img src="/fotos/icono/carro.png" alt="icona per anar a la botiga" class="" style="width: 40px;">
+      </a>
+      <a class="navbar-brand" href="compte.html" aria-label="compte">
+          <img src="/fotos/icono/usuari.png" alt="icona per anar a usuari" aria-label="usuari" class="" style="width:40px">
+      </a>
+      </div>
+    </div>
+  </nav>
+
+<!--Foto amb text-->
+
+<div style="height: 500px;" class="container-fluid position-relative d-flex flex-column align-items-center justify-content-center">
+  <h1 class="z-1" style="color: white;">Productes</h1>
+  <h4 class="z-1" style="color: rgb(255, 255, 255)">Naturals i adequats per qualsevol bona ocasió</h4>
+
+  <img src="./fotos/productes2.JPG" alt="Ampolla de Can Figueras" class="img-fluid w-100 h-100 object-fit-cover position-absolute">
+
+  </div>
+
+<!--Filtre i ordenar-->
+
+  <div class="container-fluid">
+    <div class="container d-flex mt-5">
+      <div class="container d-flex gap-2">
+        <a href="#" aria-label="dolç" >Dolç</a> <p> / </p><a href="#" aria-label="brut">Brut</a> <p> / </p><a href="#" aria-label="sec">Sec</a> <p> / </p><a href="#" aria-label="resrva">Reserva</a>
+      </div>
+      <div class="container justify-content-end d-flex col-3 gap-2 align-items-center">
+        <p class="m-0">Ordenar per: </p> 
+        <div class="dropdown">
+          <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: #F0E2BA; border-color:black">
+            Seleccionar
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" aria-label="temps de reserva" href="#">Temps de reserva</a></li>
+            <li><a class="dropdown-item" aria-label="preu" href="#">Preu</a></li>
+            <li><a class="dropdown-item" aria-label="ressenyes" href="#">ressenyes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card" style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_BRUT-NEUTRE-RESERVA.JPG" class="card-img-top img-fluid" alt="Cava brut nature reserva">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA BRUT NEUTRE RESERVA</h5>
+              <p class="card-text">El cava brut nature reserva és un tipus de cava molt sec i de gran qualitat. Combina bé amb aperitius (olives, pernil ibèric, formatges curats), marisc i peix,sushi o plats asiàtics lleugers.També va molt bé sol, com a copa per brindar o començar un àpat.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item1.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card " style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_BRUT_NEURE.JPG" class="card-img-top img-fluid" alt="Cava brut nature">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA BRUT NEUTRE</h5>
+              <p class="card-text">El cava brut nature és un tipus de cava sec i de gran qualitat. Combina bé amb aperitius (olives, pernil ibèric, formatges curats), marisc i peix,sushi o plats asiàtics lleugers.També va molt bé sol, com a copa per brindar o començar un àpat.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item2.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card " style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_BRUT_RESERVA.JPG" class="card-img-top" alt="Cava brut reserva">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA BRUT RESERVA</h5>
+              <p class="card-text">El cava brut reserva marida molt bé amb embotits ibèrics, formatges curats, marisc i arrossos, gràcies al seu equilibri entre frescor, cos i un punt sec que realça els sabors intensos.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item3.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col">
+          <div class="card" style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_DOLÇ_RESERVA.JPG" class="card-img-top" alt="Cava dolç reserva">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA DOLÇ RESERVA</h5>
+              <p class="card-text">El cava dolç reserva marida molt bé amb postres, pastissos de fruita, xocolata suau i formatges blaus, gràcies al seu alt contingut en sucre i el seu perfil afruitat, que acompanya i equilibra els sabors dolços i potents.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem; color:red;"><b>12,00€</b></p>
+                <a href="item4.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_EXTRA_SEC.JPG" class="card-img-top" alt="Cava extra sec">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA EXTRA SEC</h5>
+              <p class="card-text">El cava extra sec marida perfectament amb aperitius suaus com foie gras, formatges cremosos i fruits secs, gràcies a l seu punt dolç.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item5.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_EXTRE_SEC_RESERVA.JPG" class="card-img-top" alt="Cava extra sec reserva">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA EXTRA SEC RESERVA</h5>
+              <p class="card-text">El cava extra sec reserva és un cava de qualitat que marida perfectament amb aperitius suaus com foie gras, formatges cremosos i fruits secs, gràcies a l seu punt dolç.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item6.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row mt-5">
+        <div class="col-4">
+          <div class="card" style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_SEC.JPG" class="card-img-top" alt="Cava sec">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA SEC</h5>
+              <p class="card-text">El cava sec és un cava que marida perfectament amb aperitius suaus com foie gras, formatges cremosos i fruits secs, gràcies a l seu punt dolç.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item7.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 23rem;">
+            <img src="/fotos_cava/CAVA_SEMIDOLÇ.JPG" class="card-img-top" alt="Cava semidolç">
+            <div class="card-body" style="background-color: #DFD5B8;">
+              <h5 class="card-title">CAVA SEMIDOLÇ</h5>
+              <p class="card-text">El cava semidolç és un cava que marida perfectament amb menjars com la carn o el peix, gràcies a l seu punt semidolç.</p>
+              <div class="container d-flex justify-content-between">
+                <p class="m-0" style="font-size: 1.5rem"><b>24,00€</b></p>
+                <a href="item8.html" aria-label="producte 7" class="btn btn-primary">Comprar</a>
+              </div>            
+            </div>
+          </div>
+        </div>
+        
+
+      </div>
+
+     
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row p-5">
+            <div class="col">
+              <p>Xarxes socials</p>
+              <img style="height:60px; margin:auto" src="/fotos/icono/xxss.png" alt="xarxes socials">
+            </div>
+            <div class="col">
+              <p style="font-size: medium;">Els nostres caves</p>
+              <p><a href="#" aria-label="Caves dolços">Dolç</a></p>
+              <p><a href="#" aria-label="Caves bruts">Brut</a></p>
+              <p><a href="#" aria-label="Caves reserva">Reserva</a></p>
+              <p><a href="#" aria-label="Caves secs">Sec</a></p>
+            </div>
+            <div class="col">
+              <p style="font-size: medium;">Legal</p>
+              <p><a href="#" aria-label="Política privadesa">Política de privadesa</a></p>
+              <p><a href="#" aria-label="Direcció termes de servei">Termes de serveis</a></p>
+            </div>
+            <div class="col">
+              <p style="font-size: medium;">FAQS</p>
+              <p><a href="faqs.html" aria-label="Faqs">Quins són els terminis d’enviament?</a></p>
+              <p><a href="faqs.html" aria-label="Faqs">Què passa si una ampolla arriba trencada?</a></p>
+              <p><a href="faqs.html" aria-label="Faqs">Quines formes de pagament accepteu?</a></p>
+    
+            </div>
+          </div>
+        </div>
+      </footer>
+    
+    
+    </body>
+    
+    </html>
